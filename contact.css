@@ -1,0 +1,269 @@
+/* portfolio - contact css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rakkas", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(39, 37, 49);
+}
+
+/* ── Navigation Bar ── */
+
+.navigation {
+  font-size: 28px;
+  color: rgb(24, 20, 58);
+  background-color: rgb(97, 122, 190);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 40px;
+  height: 64px;
+  align-items: center;
+}
+
+.navigation a {
+  background-color: transparent;
+  color: rgb(24, 20, 58);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-title {
+  background-color: transparent;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+.text-item:hover {
+  color: rgb(150, 180, 255);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ── Page Header ── */
+
+.page-header {
+  text-align: center;
+  padding: 28px 40px 20px;
+  border-bottom: 1px solid rgb(97, 122, 190);
+  margin-bottom: 40px;
+}
+
+.page-title {
+  font-size: 38px;
+  color: rgb(97, 122, 190);
+  background-color: transparent;
+}
+
+.page-subtitle {
+  font-size: 18px;
+  color: rgb(160, 165, 190);
+  margin-top: 6px;
+  background-color: transparent;
+}
+
+/* ── Contact Layout ── */
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+  background-color: transparent;
+}
+
+/* ── Info Cards ── */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: transparent;
+}
+
+.info-card {
+  background-color: rgb(16, 12, 47);
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(97, 122, 190, 0.2);
+}
+
+.info-icon {
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  background-color: rgb(25, 20, 66);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background-color: transparent;
+}
+
+.info-label {
+  font-size: 12px;
+  color: rgb(97, 122, 190);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  background-color: transparent;
+}
+
+.info-value {
+  font-size: 14px;
+  color: rgb(190, 192, 210);
+  word-break: break-all;
+  background-color: transparent;
+}
+
+/* ── Form Card ── */
+
+.form-card {
+  background-color: rgb(16, 12, 47);
+  border-radius: 12px;
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-title {
+  font-size: 24px;
+  color: rgb(200, 200, 220);
+  border-bottom: 1px solid rgb(40, 35, 90);
+  padding-bottom: 14px;
+  background-color: transparent;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background-color: transparent;
+}
+
+.form-label {
+  font-size: 14px;
+  color: rgb(97, 122, 190);
+  letter-spacing: 0.04em;
+  background-color: transparent;
+}
+
+.form-input {
+  background-color: rgb(25, 20, 66);
+  border: 1px solid rgb(50, 45, 100);
+  border-radius: 8px;
+  color: rgb(200, 200, 220);
+  font-family: "Rakkas", serif;
+  font-size: 15px;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+.form-input::placeholder {
+  color: rgb(90, 90, 120);
+  background-color: transparent;
+}
+
+.form-input:focus {
+  border-color: rgb(97, 122, 190);
+  box-shadow: 0 0 0 3px rgba(97, 122, 190, 0.15);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 130px;
+  line-height: 1.6;
+}
+
+.form-submit {
+  background-color: rgb(97, 122, 190);
+  color: rgb(24, 20, 58);
+  font-family: "Rakkas", serif;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  margin-top: 4px;
+}
+
+.form-submit:hover {
+  background-color: rgb(120, 148, 215);
+  transform: translateY(-2px);
+}
+
+.form-confirm {
+  font-size: 15px;
+  text-align: center;
+  min-height: 22px;
+  background-color: transparent;
+}
+
+/* ── Footer ── */
+
+.footer-box {
+  padding: 14px 40px;
+  text-align: center;
+  border-top: 1px solid rgb(97, 122, 190);
+  margin-top: 10px;
+}
+
+.footer-box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+
+.footer-box ul ul {
+  margin-top: 6px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.footer-box li {
+  color: rgb(150, 160, 190);
+  font-size: 16px;
+  padding: 2px 0;
+  background-color: transparent;
+}
+
+.footer-box > ul > li:first-child {
+  color: rgb(97, 122, 190);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  background-color: transparent;
+}
